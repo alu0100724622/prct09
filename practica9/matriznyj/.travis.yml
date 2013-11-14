@@ -1,4 +1,3 @@
-#Travis
 
 language: ruby
 rvm:

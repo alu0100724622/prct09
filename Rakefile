@@ -5,7 +5,7 @@ $:.unshift File.dirname(__FILE__) + 'lib'
 $:.unshift './lib', './spec'
 
 require 'rspec/core/rake_task'
-require "bundler/gem_tasks"
+#require "bundler/gem_tasks"
 
 RSpec::Core::RakeTask.new
 task :default => :spec

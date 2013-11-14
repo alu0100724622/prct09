@@ -1,4 +1,6 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
-# Specify your gem's dependencies in matriznyj.gemspec
-gemspec
+gem 'rspec'
+gem 'rake'
+gem 'guard-rspec'
+gem 'guard-bundler'

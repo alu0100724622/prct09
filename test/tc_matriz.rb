@@ -1,5 +1,5 @@
 
-require "./matriz.rb"
+require "./matriznyj.rb"
 require "test/unit"
 require "rspec"
 

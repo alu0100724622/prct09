@@ -1,6 +1,6 @@
 
-require "matriznyj"
 require "rspec"
+require "matriznyj"
 
 
 describe "metodo mostrar" do

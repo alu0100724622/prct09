@@ -2,6 +2,7 @@
 require "matriznyj"
 require "test/unit"
 require "rspec"
+include Matriznyj
 
 
 class Test_Matriz_Densa < Test::Unit::TestCase

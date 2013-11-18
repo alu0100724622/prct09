@@ -1,6 +1,7 @@
 
 require "rspec"
 require "matriznyj"
+include Matriznyj
 
 
 describe "metodo mostrar" do
@@ -65,3 +66,4 @@ describe "operaciones aritmeticas" do
 	end
 
 end
+

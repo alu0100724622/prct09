@@ -1,4 +1,4 @@
-require "matriznyj/version"
+#require "matriznyj/version"
 
 module Matriznyj
 
@@ -70,7 +70,7 @@ attr_accessor :matrix, :fil, :col						# define una variable matrix, fil, col y 
 	
 	def +(other)
 		
-		if ((other.class.to_s == "Densa") && (other.fil == @fil) && (other.col == @col))
+		#if ((other.class.to_s == "Densa") && (other.fil == @fil) && (other.col == @col))
 			
 			matrizSuma = Array.new(@fil) {Array.new(@col)}
 			i = 0								
@@ -92,15 +92,15 @@ attr_accessor :matrix, :fil, :col						# define una variable matrix, fil, col y 
 			#puts "#{matrizSuma}"
 			return matrizSuma
 			
-		else
-			raise ArgumentError, "Matrices de distinto tamanio"
-		end
+		#else
+			#raise ArgumentError, "Matrices de distinto tamanio"
+		#end
 	end
 
 
 	def -(other)
 		
-		if ((other.class.to_s == "Densa") && (other.fil == @fil) && (other.col == @col))
+		#if ((other.class.to_s == "Densa") && (other.fil == @fil) && (other.col == @col))
 			
 			matrizResta = Array.new(@fil) {Array.new(@col)}
 			i = 0								
@@ -122,15 +122,15 @@ attr_accessor :matrix, :fil, :col						# define una variable matrix, fil, col y 
 			#puts "#{matrizResta}"
 			return matrizResta
 			
-		else
-			raise ArgumentError, "Matrices de distinto tamanio"
-		end
+		#else
+			#raise ArgumentError, "Matrices de distinto tamanio"
+		#end
 	end
 	
 	
 	def *(other)
 		
-		if ((other.class.to_s == "Densa") && (@fil == @col) && (other.fil == other.col) && (@fil == other.fil))
+		#if ((other.class.to_s == "Densa") && (@fil == @col) && (other.fil == other.col) && (@fil == other.fil))
 			
 			matrizMult = Array.new(@fil) {Array.new(@col)}
 			i = 0								
@@ -162,9 +162,9 @@ attr_accessor :matrix, :fil, :col						# define una variable matrix, fil, col y 
 			#puts "#{matrizMult}"
 			return matrizMult
 			
-		else
-			raise ArgumentError, "Numero distinto de filas y columnas"
-		end
+		#else
+			#raise ArgumentError, "Numero distinto de filas y columnas"
+		#end
 		
 	end
 	
@@ -396,7 +396,7 @@ class Dispersa < Matriz
 
 	def +(other)
 		
-		if ((other.class.to_s == "Dispersa") && (other.fil == @fil) && (other.col == @col))
+		#if ((other.class.to_s == "Dispersa") && (other.fil == @fil) && (other.col == @col))
 			
 			matrizSuma = Array.new(@fil) {Array.new(@col) {0}}
 			
@@ -422,15 +422,15 @@ class Dispersa < Matriz
 			#puts "suma = #{matrizSuma}"
 			return matrizSuma
 			
-		else
-			raise ArgumentError, "Matrices de distinto tamanio"
-		end
+		#else
+			#raise ArgumentError, "Matrices de distinto tamanio"
+		#end
 	end
 
 
 	def -(other)
 		
-		if ((other.class.to_s == "Dispersa") && (other.fil == @fil) && (other.col == @col))
+		#if ((other.class.to_s == "Dispersa") && (other.fil == @fil) && (other.col == @col))
 			
 			matrizResta = Array.new(@fil) {Array.new(@col) {0}}
 			
@@ -457,9 +457,9 @@ class Dispersa < Matriz
 			#puts "resta = #{matrizResta}"
 			return matrizResta
 			
-		else
-			raise ArgumentError, "Matrices de distinto tamanio"
-		end
+		#else
+			#raise ArgumentError, "Matrices de distinto tamanio"
+		#end
 	end
 
 

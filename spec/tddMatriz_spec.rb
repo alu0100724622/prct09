@@ -105,8 +105,8 @@ describe "minimo y maximo" do
 	
 	it "maximo" do
 		
-		@matriz1.minimo.should eq(8)
-		@matriz2.minimo.should eq(2)
+		@matriz1.maximo.should eq(8)
+		@matriz2.maximo.should eq(2)
 		
 	end
 	

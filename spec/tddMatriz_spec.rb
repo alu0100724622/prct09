@@ -1,6 +1,6 @@
 
 require "rspec"
-require "./lib/matriznyj.rb"
+require "matriznyj"
 
 
 describe "metodo mostrar" do
